@@ -13,6 +13,13 @@
       <script src="./bower_components/html5shiv/dist/html5shiv.js"></script>
       <script src="./bower_components/respond/dest/respond.min.js"></script>
     <![endif]-->
+    
+    <script>
+      var addy = window.location.href;
+      if (addy.indexOf('http:') === 0) {
+        window.location.href = addy.replace(/^http/, 'https')
+      }
+    </script>
     <script>
 
      var _gaq = _gaq || [];
